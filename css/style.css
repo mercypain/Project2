@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 2s forwards;
+}
+
+.nav-panel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nav-style a {
+  color: white;
+  background-color: #7979794f;
+  border: 1px solid rgb(95, 89, 89);
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.nav-style {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem;
+  padding: 0;
+  animation: slideIn 2s forwards;
+}
+.video-style {
+  width: 100%;
+  animation: fadeIn 2s forwards; /* Применение анимации */
+}
+.video-container {
+  margin-top: 1rem;
+}
+
+.text-container {
+  text-align: center;
+  animation: fadeIn 2s forwards;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+.h1-text-style {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.span-text {
+  font-size: 1rem;
+}
+.button-style {
+  background-color: #7979794f;
+  border: 1px solid #FFA500;
+  border-radius: 10px;
+}
+.button-style a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.projects-me{
+  animation: fadeIn 2s forwards;
+}
+.projects-me p, a {
+  margin: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.projects-header {
+  position: relative;
+  animation: fadeIn 2s forwards;
+}
+.img-projects-style {
+  width: 100%;
+  z-index: -1;
+}
+.h1-projects-style {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  display: absolute;
+  transform: translate(0%, -100%); /* Смещаем текст на 50% его ширины и высоты для центрирования */
+}
+.projects-one,
+.projects-two,
+.projects-three {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: #7979794f;
+  border: 1px solid #FFD700;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.h1-path-style {
+  font-size: 2rem;
+  text-align: center;
+}
+.img-path-style {
+  width: auto;
+  height: 15rem;
+}
+
+.reviews-achievements {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.reviews-header {
+  position: relative;
+  display: inline-block;
+  line-height: 1; 
+}
+.reviews-achievements h1{
+  display: absolute;
+  margin: 0;
+  text-align: center;
+  transform: translate(0%, -40%);
+  font-size: 2rem;
+}
+.reviews-achievements h2 {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  
+}
+.reviews-achievements p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.reviews-achievements a { 
+  margin: 0;
+}
+.img-reviews-style {
+  display: block; /* Убирает лишние отступы вокруг изображения */
+  max-width: 100%; /* Адаптивное изображение */
+  height: auto;
+  z-index: -1;
+}
+.reviews-comments {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: #7979794f;
+  border: 1px solid #1E90FF;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 0.2rem;
+}
+.comments-style {
+  list-style-type: none;
+  padding: 0;
+}
+.comments-style a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.quote {
+  font-style: italic;
+  text-decoration: underline;
+}
+.achievements-container {
+  display: grid;
+  justify-content: center;
+}
+.achievements-list-style {
+  list-style-type: none;
+  background-color: #7979794f;
+  border: 1px solid #32CD32;
+  border-radius: 10px;
+  padding: 0;
+}
+.achievements-list-style li {
+  padding: 1rem;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Начальная прозрачность */
+  }
+  to {
+      opacity: 1; /* Конечная прозрачность */
+  }
+}
+@keyframes slideIn {
+from {
+    transform: translateY(-100%); /* Начальное положение: вне экрана слева */
+    opacity: 0; /* Начальная прозрачность */
+}
+to {
+    transform: translateY(0); /* Конечное положение: на месте */
+    opacity: 1; /* Конечная прозрачность */
+}
+}
